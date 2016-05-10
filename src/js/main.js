@@ -3,7 +3,7 @@ import _ from 'lodash';
 
 // Get our classes
 import { TodoList } from './models/todo';
-import { Task } from './models/task';
+// import { Task } from './models/task';
 import { AppController } from './controllers/appController';
 
 
@@ -21,3 +21,5 @@ let app = new AppController(todoForm, todos, groceryList);
 app.init();
 // console.log(app);
 
+let honeyList = new TodoList('Honey Do List');
+new AppController ( $('.todoForm2'), $('.todos2'), honeyList).init();
